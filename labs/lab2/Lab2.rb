@@ -1,3 +1,7 @@
+# Austin Longo
+# 09/11/13
+# Git Link: https://github.com/Forerunner117/CSCI_3308/blob/master/labs/lab2/Lab2.rb
+
 # Part1: Hello World
 class HelloWorldClass
     def initialize(name)
@@ -26,6 +30,7 @@ def palindrome?(string)
 		puts "false"
 	end
 end
+"A man, a plan, a canal -- Panama".palindrome?
 
 palindrome?("A man, a plan, a canal -- Panama")
 palindrome?("Madam, I'm Adam!")

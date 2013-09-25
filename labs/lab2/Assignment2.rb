@@ -1,6 +1,7 @@
 #Austin Longo
 #9/24/13
 #CSCI 3308 - Assignment 2
+#github link: https://github.com/Forerunner117/CSCI_3308/blob/master/labs/lab2/Assignment2.rb
 
 
 # Part 1: Classes

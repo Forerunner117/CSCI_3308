@@ -87,12 +87,12 @@ class Class
 end
 
 
+#Test code for attr_accessor_with_history
+=begin
 class Foo
     attr_accessor_with_history :bar
 end
 
-#Test code for attr_accessor_with_history
-=begin
 f = Foo.new
 f.bar = 1
 f.bar = 2
@@ -169,13 +169,13 @@ end
 
 class Array
     def palindrome?        
-            self.each do |element| 
-                begin 
-                    element.downcase! 
-                rescue
-                    next
-                end
+        self.each do |element| 
+            begin 
+                element.downcase! 
+            rescue
+                next
             end
+        end
                     
         puts self
         if self === self.reverse

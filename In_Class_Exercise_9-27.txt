@@ -1,0 +1,60 @@
+Austin Longo
+Cliff Min
+Matt Binsfeld
+
+
+1)
+Prints:
+-------
+Pros:
+Quick
+Easily re-run
+Isolated
+
+Cons:
+Limited
+Need a lot of prints to determine bug
+	- can get crowded/ hard to read
+Due to it being imperative, this gives limited information
+	-hard to track changes
+
+
+Logger:
+-------
+Pros:
+A lot of info
+Automatic
+
+Cons:
+Too much info
+
+
+Instrumentation:
+----------------
+Pros:
+Gives detailed diagnostics
+
+Cons:
+Takes long to implement
+
+
+Debugger:
+---------
+Pros:
+Dynamic approach to evaluation
+Easy to step through code with specific tools and all of its evolving states
+	(eg: step -into, step -over)
+Break points
+Easy to hone in on the fault
+
+
+Cons:
+Takes a while
+A lot of overhead
+Requires specific knowledge of the debugger itself
+
+
+
+2)
+First check logger for event of submission and check for value that was submitted.
+Use debugger to step through when that occured and see what value was submitted and what functions were called.

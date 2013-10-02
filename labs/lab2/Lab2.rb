@@ -30,7 +30,7 @@ def palindrome?(string)
 		puts "false"
 	end
 end
-"A man, a plan, a canal -- Panama".palindrome?
+#"A man, a plan, a canal -- Panama".palindrome?
 
 palindrome?("A man, a plan, a canal -- Panama")
 palindrome?("Madam, I'm Adam!")
@@ -39,18 +39,18 @@ palindrome?("Madam, I'm Adam!")
 
 def count_words(string)
 	string.downcase!
-	string.gsub!("'", '')
-	string.gsub!(/\W+/, ' ')
-	strings = string.split(/\b/)
+	string.gsub!("'", '') #match any ' and remove space
+	string.gsub!(/\W+/, ' ') #match any non-word character and add a space
+	strings = string.split(/\b/) #matches word boundaries and splits them into array indecies
 	puts string
 	wordHash = Hash.new
 
-	strings.each do |word|
-		if wordHash.has_key?(word)
-			wordHash[word] += 1
-		elsif word === " "
+	strings.each do |word| #for each element in strings
+		if wordHash.has_key?(word) #if already added to has
+			wordHash[word] += 1        #add 1 to count 
+		elsif word === " "   #handle blank spaces in array
 			#do nothing
-		else 
+		else                 #if not in hash, add to hash w/ value=1 
 			wordHash[word] = 1
 		end 
 	end
@@ -150,6 +150,7 @@ rps_tournament_winner(
 #********************************************************
 # Part4: Anagrams
 def combine_anagrams(words)
+  #{for each word: downcase, split chars into array elements, sort array} get value from hash
 	anagrams = words.group_by { |word| word.downcase.chars.sort }.values
 	puts anagrams.to_s
 end

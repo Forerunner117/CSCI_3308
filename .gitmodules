@@ -1,0 +1,3 @@
+[submodule "labs/lab3"]
+	path = labs/lab3
+	url = https://github.com/Forerunner117/lab3.git

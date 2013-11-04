@@ -1,0 +1,14 @@
+class Zombie < ActiveRecord::Base
+  attr_accessor :name, :tweets, :brains
+  validates :name, presence: true
+  has_many :weapons, :tweets
+
+  def initialize(attributes = nil)
+    super(attributes)
+    @name = 'Ash'
+    self.tweets << Tweet.new
+    self.tweets << Tweet.new
+  end
+
+end
+
